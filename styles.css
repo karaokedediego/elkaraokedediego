@@ -24,25 +24,22 @@ a {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: #18000b;
 }
 
-.hero-video {
+.hero-bg {
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: .55;
+  background: url("foto-1.jpg") center/cover no-repeat;
+  transform: scale(1.03);
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(0,0,0,.88), rgba(30,0,20,.72), rgba(80,0,40,.35)),
-    radial-gradient(circle at 80% 20%, rgba(255, 0, 180, .28), transparent 32%),
-    radial-gradient(circle at 60% 80%, rgba(0, 180, 255, .20), transparent 35%);
+    linear-gradient(90deg, rgba(0,0,0,.88), rgba(30,0,20,.72), rgba(80,0,40,.28)),
+    radial-gradient(circle at 80% 20%, rgba(255, 0, 180, .25), transparent 32%),
+    radial-gradient(circle at 60% 80%, rgba(0, 180, 255, .18), transparent 35%);
 }
 
 .nav {
@@ -56,15 +53,7 @@ a {
 
 .logo {
   font-weight: 900;
-  letter-spacing: .3px;
   font-size: 20px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 18px;
-  align-items: center;
-  color: rgba(255,255,255,.88);
 }
 
 .nav-cta {
@@ -83,7 +72,7 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 1040px;
+  max-width: 980px;
 }
 
 .eyebrow,
@@ -95,10 +84,9 @@ a {
 }
 
 h1 {
-  font-size: clamp(42px, 7vw, 88px);
+  font-size: clamp(46px, 8vw, 92px);
   line-height: .92;
   margin: 12px 0 22px;
-  max-width: 980px;
 }
 
 .lead {
@@ -126,17 +114,11 @@ h1 {
   padding: 15px 22px;
   border-radius: 14px;
   font-weight: 900;
-  transition: transform .2s ease, box-shadow .2s ease;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
 }
 
 .primary {
   background: #ffd166;
   color: #160008;
-  box-shadow: 0 14px 36px rgba(255, 209, 102, .22);
 }
 
 .secondary {
@@ -183,12 +165,10 @@ h1 {
 }
 
 .card {
-  background:
-    linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+  background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
   border: 1px solid rgba(255,255,255,.10);
   border-radius: 26px;
   padding: 30px;
-  min-height: 235px;
 }
 
 .card span {
@@ -203,46 +183,6 @@ h1 {
 .card p {
   color: rgba(255,255,255,.76);
   line-height: 1.45;
-}
-
-.split {
-  padding: 90px 7%;
-  display: grid;
-  grid-template-columns: .9fr 1.1fr;
-  gap: 42px;
-  align-items: center;
-  background:
-    radial-gradient(circle at 20% 30%, rgba(255,0,160,.18), transparent 33%),
-    linear-gradient(135deg, #16000c, #300018);
-}
-
-.split h2 {
-  font-size: clamp(34px, 4vw, 58px);
-  line-height: 1;
-  margin: 12px 0 20px;
-}
-
-.split p {
-  color: rgba(255,255,255,.82);
-  font-size: 18px;
-  line-height: 1.55;
-  margin-bottom: 28px;
-}
-
-.media-card {
-  border-radius: 30px;
-  overflow: hidden;
-  border: 1px solid rgba(255,255,255,.14);
-  box-shadow: 0 30px 80px rgba(0,0,0,.35);
-  background: #000;
-}
-
-.media-card video,
-.media-card img {
-  display: block;
-  width: 100%;
-  max-height: 680px;
-  object-fit: cover;
 }
 
 .gallery {
@@ -269,7 +209,7 @@ h1 {
 .events {
   background:
     linear-gradient(135deg, rgba(0,0,0,.78), rgba(55,0,35,.78)),
-    url("assets/foto-3.jpg") center/cover;
+    url("foto-3.jpg") center/cover;
   text-align: center;
 }
 
@@ -322,19 +262,13 @@ footer strong {
 }
 
 @media (max-width: 950px) {
-  .nav-links a:not(.nav-cta) {
-    display: none;
-  }
-
   .cards,
-  .split,
   .photo-grid {
     grid-template-columns: 1fr;
   }
 
   .hero-content,
   .section,
-  .split,
   .nav {
     padding-left: 5%;
     padding-right: 5%;
@@ -343,31 +277,14 @@ footer strong {
   .photo-grid img {
     height: 300px;
   }
-
-  .media-card video,
-  .media-card img {
-    max-height: none;
-  }
 }
 
 @media (max-width: 560px) {
-  .hero {
-    min-height: 92vh;
-  }
-
   h1 {
-    font-size: 42px;
-  }
-
-  .lead {
-    font-size: 17px;
+    font-size: 44px;
   }
 
   .btn {
-    width: 100%;
-  }
-
-  .actions {
     width: 100%;
   }
 
