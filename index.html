@@ -5,90 +5,173 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>El Karaoke de Diego | Karaoke, cena y baile en Lugano</title>
-  <meta name="description" content="El Karaoke de Diego en Montiel 5672, Lugano. Karaoke, cena, baile, cumpleaños y noches inolvidables. Reservas por WhatsApp." />
+  <meta name="description" content="El Karaoke de Diego en Montiel 5672, Lugano. Karaoke, cena, baile, cumpleaños, eventos y noches inolvidables. Reservas por WhatsApp." />
+
+  <meta property="og:title" content="El Karaoke de Diego" />
+  <meta property="og:description" content="La noche más divertida de Lugano: karaoke, cena, baile y festejos." />
+  <meta property="og:image" content="foto-1.jpg" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <a class="whatsapp" href="https://wa.me/5491164919419" target="_blank">☏</a>
+  <div class="noise"></div>
 
-  <header class="hero">
-    <div class="hero-bg"></div>
+  <a class="whatsapp" href="https://wa.me/5491164919419" target="_blank" aria-label="Reservar por WhatsApp">
+    <span>☏</span>
+  </a>
+
+  <header class="hero" id="inicio">
+    <video class="hero-video" autoplay muted loop playsinline poster="foto-1.jpg" src="hero-video.mp4"></video>
     <div class="hero-overlay"></div>
+    <div class="light light-a"></div>
+    <div class="light light-b"></div>
+    <div class="light light-c"></div>
 
     <nav class="nav">
-      <div class="logo">🎤 El Karaoke de Diego</div>
+      <a class="logo" href="#inicio"><span>🎤</span> El Karaoke de Diego</a>
+      <div class="nav-links">
+        <a href="#experiencia">Experiencia</a>
+        <a href="#galeria">Galería</a>
+        <a href="#cumples">Cumpleaños</a>
+        <a href="#ubicacion">Ubicación</a>
+      </div>
       <a class="nav-cta" href="https://wa.me/5491164919419" target="_blank">Reservar</a>
     </nav>
 
-    <section class="hero-content">
+    <section class="hero-content reveal">
       <p class="eyebrow">Montiel 5672 · Lugano · CABA</p>
-      <h1>La noche más divertida de Lugano</h1>
+      <h1>Donde las canciones se convierten en recuerdos.</h1>
       <p class="lead">
         Karaoke, cena, baile, brindis y festejos en un ambiente con luces,
         música y mucha buena onda.
       </p>
+
+      <div class="hero-pills">
+        <span>🎤 Karaoke</span>
+        <span>🍽️ Cena</span>
+        <span>💃 Baile</span>
+        <span>🎉 Cumpleaños</span>
+      </div>
+
       <div class="actions">
-        <a class="btn primary" href="https://wa.me/5491164919419" target="_blank">Reservar por WhatsApp</a>
+        <a class="btn primary pulse" href="https://wa.me/5491164919419" target="_blank">Reservá tu mesa</a>
         <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Montiel%205672%20CABA" target="_blank">Cómo llegar</a>
       </div>
     </section>
+
+    <a class="scroll-hint" href="#experiencia">Bajá para ver más ↓</a>
   </header>
 
   <main>
-    <section class="section intro">
+    <section class="section intro" id="experiencia">
       <p class="kicker">No hace falta saber cantar</p>
       <h2>Solo hace falta tener ganas de pasarla bien.</h2>
       <p>
-        En El Karaoke de Diego venís a cantar, cenar, bailar, brindar y compartir
-        una noche distinta con amigos, familia o pareja.
+        En El Karaoke de Diego venís a vivir una noche completa: cantás,
+        cenás, bailás, brindás y compartís un momento distinto con tu gente.
       </p>
+
+      <div class="stats">
+        <div><strong>🎤</strong><span>Karaoke libre</span></div>
+        <div><strong>🥂</strong><span>Brindis y cena</span></div>
+        <div><strong>🪩</strong><span>Pista con luces</span></div>
+        <div><strong>📍</strong><span>En Lugano</span></div>
+      </div>
     </section>
 
     <section class="section cards">
       <article class="card">
         <span>🎤</span>
-        <h3>Karaoke</h3>
-        <p>Subite a cantar tus temas favoritos y disfrutá el escenario.</p>
+        <h3>Subite al escenario</h3>
+        <p>Elegí tu tema favorito y cantalo solo, en dúo o con todo el grupo.</p>
       </article>
       <article class="card">
         <span>🍽️</span>
-        <h3>Cena</h3>
-        <p>Mesas para compartir, brindar y arrancar la noche cómodo.</p>
+        <h3>Arrancá con cena</h3>
+        <p>Mesas para compartir, brindar y disfrutar la previa de la noche.</p>
       </article>
       <article class="card">
         <span>💃</span>
-        <h3>Baile</h3>
-        <p>Luces, música y pista para seguir la noche después de cantar.</p>
+        <h3>La noche sigue</h3>
+        <p>Luces, música y pista para que nadie se quede sentado.</p>
       </article>
       <article class="card">
         <span>🎉</span>
         <h3>Festejos</h3>
-        <p>Cumpleaños, reuniones, grupos de amigos y eventos especiales.</p>
+        <p>Cumpleaños, reuniones, aniversarios y eventos especiales.</p>
       </article>
     </section>
 
-    <section class="section gallery">
+    <section class="section split">
+      <div class="split-text">
+        <p class="kicker">Una experiencia distinta</p>
+        <h2>Venís por el karaoke. Te quedás por el ambiente.</h2>
+        <p>
+          Luces, bolas de espejo, gente cantando, mesas brindando y una pista
+          que convierte cualquier salida en una noche inolvidable.
+        </p>
+        <a class="btn primary" href="https://wa.me/5491164919419" target="_blank">Consultar disponibilidad</a>
+      </div>
+      <div class="feature-photo">
+        <img src="foto-3.jpg" alt="Pista iluminada en El Karaoke de Diego">
+      </div>
+    </section>
+
+    <section class="section gallery" id="galeria">
       <p class="kicker">Galería</p>
       <h2>Así se vive una noche en El Karaoke de Diego</h2>
 
       <div class="photo-grid">
-        <img src="foto-1.jpg" alt="Noche en El Karaoke de Diego">
-        <img src="foto-2.jpg" alt="Pista y luces del karaoke">
-        <img src="foto-3.jpg" alt="Gente bailando y cantando">
-        <img src="foto-4.jpg" alt="Karaoke en vivo">
-        <img src="foto-5.jpg" alt="Mesa y festejo">
-        <img src="foto-6.jpg" alt="Brindis en El Karaoke de Diego">
+        <a href="foto-1.jpg"><img src="foto-1.jpg" alt="Noche en El Karaoke de Diego"></a>
+        <a href="foto-2.jpg"><img src="foto-2.jpg" alt="Karaoke con luces"></a>
+        <a href="foto-3.jpg"><img src="foto-3.jpg" alt="Pista y baile"></a>
+        <a href="foto-4.jpg"><img src="foto-4.jpg" alt="Gente cantando karaoke"></a>
+        <a href="foto-5.jpg"><img src="foto-5.jpg" alt="Mesa brindando"></a>
+        <a href="foto-6.jpg"><img src="foto-6.jpg" alt="Festejo en karaoke"></a>
       </div>
     </section>
 
-    <section class="section events">
-      <h2>Tu cumpleaños puede terminar con todos cantando.</h2>
-      <p>Consultá disponibilidad para cumpleaños, grupos, reuniones familiares y noches especiales.</p>
-      <a class="btn primary" href="https://wa.me/5491164919419" target="_blank">Reservar ahora</a>
+    <section class="section birthday" id="cumples">
+      <div class="birthday-card">
+        <p class="kicker">Cumpleaños y eventos</p>
+        <h2>Tu festejo puede terminar con todos cantando.</h2>
+        <p>
+          Ideal para cumpleaños, grupos de amigos, reuniones familiares,
+          aniversarios y eventos donde querés que todos se diviertan.
+        </p>
+
+        <div class="mini-list">
+          <span>🎂 Cumpleaños</span>
+          <span>🥂 Aniversarios</span>
+          <span>👨‍👩‍👧 Reuniones familiares</span>
+          <span>🎤 Karaoke libre</span>
+        </div>
+
+        <a class="btn primary" href="https://wa.me/5491164919419" target="_blank">Reservar fecha</a>
+      </div>
     </section>
 
-    <section class="section location">
+    <section class="section reviews">
+      <p class="kicker">Lo que se vive</p>
+      <h2>Una noche para animarse y disfrutar.</h2>
+      <div class="review-grid">
+        <article>
+          <div>★★★★★</div>
+          <p>“La pasamos increíble. Ambiente familiar, música y mucha diversión.”</p>
+        </article>
+        <article>
+          <div>★★★★★</div>
+          <p>“Ideal para ir con amigos, cantar, cenar y bailar toda la noche.”</p>
+        </article>
+        <article>
+          <div>★★★★★</div>
+          <p>“Un lugar con muy buena onda para festejar cumpleaños.”</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section location" id="ubicacion">
       <p class="kicker">Dónde estamos</p>
       <h2>Montiel 5672, Lugano</h2>
       <p>Ciudad Autónoma de Buenos Aires</p>
@@ -110,7 +193,7 @@
 
   <footer>
     <strong>🎤 El Karaoke de Diego</strong>
-    <p>Karaoke · Cena · Baile · Festejos</p>
+    <p>Karaoke · Cena · Baile · Cumpleaños · Eventos</p>
     <p>Montiel 5672, Lugano, CABA · Reservas: 11 6491-9419</p>
   </footer>
 </body>
