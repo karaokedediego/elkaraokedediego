@@ -23,6 +23,7 @@
 
   <header class="hero" id="inicio">
     <video class="hero-video" autoplay muted loop playsinline poster="foto-1.jpg" src="hero-video.mp4"></video>
+    <div class="hero-fallback"></div>
     <div class="hero-overlay"></div>
     <div class="light light-a"></div>
     <div class="light light-b"></div>
@@ -32,31 +33,33 @@
       <a class="logo" href="#inicio"><span>🎤</span> El Karaoke de Diego</a>
       <div class="nav-links">
         <a href="#experiencia">Experiencia</a>
+        <a href="#fechas">Fechas</a>
         <a href="#galeria">Galería</a>
-        <a href="#cumples">Cumpleaños</a>
         <a href="#ubicacion">Ubicación</a>
       </div>
       <a class="nav-cta" href="https://wa.me/5491164919419" target="_blank">Reservar</a>
     </nav>
 
-    <section class="hero-content reveal">
+    <section class="hero-content">
       <p class="eyebrow">Montiel 5672 · Lugano · CABA</p>
       <h1>Donde las canciones se convierten en recuerdos.</h1>
       <p class="lead">
-        Karaoke, cena, baile, brindis y festejos en un ambiente con luces,
-        música y mucha buena onda.
+        Entrada libre, karaoke, cena, baile, brindis y festejos en un ambiente con luces,
+        música y mucha buena onda. También podés reservar tu mesa para cumpleaños.
       </p>
 
       <div class="hero-pills">
         <span>🎤 Karaoke</span>
         <span>🍽️ Cena</span>
         <span>💃 Baile</span>
-        <span>🎉 Cumpleaños</span>
+        <span>🎉 Viernes por medio</span>
+        <span>🎂 Reservá tu cumple</span>
+        <span>🚪 Entrada libre</span>
       </div>
 
       <div class="actions">
         <a class="btn primary pulse" href="https://wa.me/5491164919419" target="_blank">Reservá tu mesa</a>
-        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Montiel%205672%20CABA" target="_blank">Cómo llegar</a>
+        <a class="btn secondary" href="#fechas">Ver fechas disponibles</a>
       </div>
     </section>
 
@@ -74,9 +77,89 @@
 
       <div class="stats">
         <div><strong>🎤</strong><span>Karaoke libre</span></div>
-        <div><strong>🥂</strong><span>Brindis y cena</span></div>
+        <div><strong>🥂</strong><span>Cena y brindis</span></div>
         <div><strong>🪩</strong><span>Pista con luces</span></div>
-        <div><strong>📍</strong><span>En Lugano</span></div>
+        <div><strong>📅</strong><span>Viernes por medio</span></div>
+      </div>
+    </section>
+
+
+    <section class="section open-night">
+      <div class="open-card">
+        <p class="kicker">Entrada libre</p>
+        <h2>Vení a disfrutar la noche o reservá tu mesa para festejar.</h2>
+        <p>
+          El Karaoke de Diego es un lugar abierto para venir a cantar, cenar, bailar y pasarla bien.
+          Si querés festejar tu cumpleaños, aniversario o juntada, podés reservar una mesa y vivir
+          la noche con tu grupo.
+        </p>
+
+        <div class="open-options">
+          <article>
+            <span>🚪</span>
+            <h3>Entrada libre</h3>
+            <p>Venís, te sumás a la noche y disfrutás del karaoke, la cena y el baile.</p>
+          </article>
+          <article>
+            <span>🎂</span>
+            <h3>Reservá tu mesa</h3>
+            <p>Ideal para cumpleaños, grupos de amigos, familia o festejos especiales.</p>
+          </article>
+        </div>
+
+        <a class="btn primary" href="https://wa.me/5491164919419?text=Hola%2C%20quiero%20consultar%20para%20reservar%20una%20mesa%20de%20cumplea%C3%B1os%20en%20El%20Karaoke%20de%20Diego" target="_blank">
+          Consultar por cumpleaños
+        </a>
+      </div>
+    </section>
+
+    <section class="section calendar" id="fechas">
+      <p class="kicker">Próximas noches</p>
+      <h2>Fechas disponibles</h2>
+      <p class="calendar-subtitle">
+        Reservá tu mesa con anticipación. Las noches de karaoke se realizan viernes por medio.
+      </p>
+
+      <div class="month-block">
+        <h3>Julio 2026</h3>
+        <div class="date-grid">
+          <article class="date-card featured">
+            <span class="day">Viernes</span>
+            <strong>3</strong>
+            <span>Julio 2026</span>
+            <a href="https://wa.me/5491164919419?text=Hola%2C%20quiero%20reservar%20para%20el%20viernes%203%20de%20julio%20de%202026" target="_blank">Reservar</a>
+          </article>
+          <article class="date-card">
+            <span class="day">Viernes</span>
+            <strong>17</strong>
+            <span>Julio 2026</span>
+            <a href="https://wa.me/5491164919419?text=Hola%2C%20quiero%20reservar%20para%20el%20viernes%2017%20de%20julio%20de%202026" target="_blank">Reservar</a>
+          </article>
+          <article class="date-card">
+            <span class="day">Viernes</span>
+            <strong>31</strong>
+            <span>Julio 2026</span>
+            <a href="https://wa.me/5491164919419?text=Hola%2C%20quiero%20reservar%20para%20el%20viernes%2031%20de%20julio%20de%202026" target="_blank">Reservar</a>
+          </article>
+        </div>
+      </div>
+
+      <div class="month-block">
+        <h3>Agosto 2026</h3>
+        <div class="date-grid">
+          <article class="date-card">
+            <span class="day">Viernes</span>
+            <strong>14</strong>
+            <span>Agosto 2026</span>
+            <a href="https://wa.me/5491164919419?text=Hola%2C%20quiero%20reservar%20para%20el%20viernes%2014%20de%20agosto%20de%202026" target="_blank">Reservar</a>
+          </article>
+          <article class="date-card">
+            <span class="day">Viernes</span>
+            <strong>28</strong>
+            <span>Agosto 2026</span>
+            <a href="https://wa.me/5491164919419?text=Hola%2C%20quiero%20reservar%20para%20el%20viernes%2028%20de%20agosto%20de%202026" target="_blank">Reservar</a>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -137,18 +220,18 @@
         <p class="kicker">Cumpleaños y eventos</p>
         <h2>Tu festejo puede terminar con todos cantando.</h2>
         <p>
-          Ideal para cumpleaños, grupos de amigos, reuniones familiares,
-          aniversarios y eventos donde querés que todos se diviertan.
+          Podés reservar tu mesa para cumpleaños, grupos de amigos, reuniones familiares,
+          aniversarios y eventos donde querés que todos se diviertan cantando y bailando.
         </p>
 
         <div class="mini-list">
-          <span>🎂 Cumpleaños</span>
+          <span>🎂 Mesa de cumpleaños</span>
           <span>🥂 Aniversarios</span>
           <span>👨‍👩‍👧 Reuniones familiares</span>
           <span>🎤 Karaoke libre</span>
         </div>
 
-        <a class="btn primary" href="https://wa.me/5491164919419" target="_blank">Reservar fecha</a>
+        <a class="btn primary" href="https://wa.me/5491164919419?text=Hola%2C%20quiero%20reservar%20una%20mesa%20para%20cumplea%C3%B1os%20en%20El%20Karaoke%20de%20Diego" target="_blank">Reservar mesa de cumpleaños</a>
       </div>
     </section>
 
