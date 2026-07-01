@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>El Karaoke de Diego | Karaoke, cena y baile en Lugano</title>
-  <meta name="description" content="El Karaoke de Diego en Montiel 5672, Lugano. Karaoke, cena, baile, cumpleaños, eventos y noches inolvidables. Reservas por WhatsApp." />
-
+  <meta name="description" content="El Karaoke de Diego en Montiel 5672, Lugano. Entrada libre, karaoke, cena, baile, cumpleaños y reservas de mesa." />
   <meta property="og:title" content="El Karaoke de Diego" />
-  <meta property="og:description" content="La noche más divertida de Lugano: karaoke, cena, baile y festejos." />
+  <meta property="og:description" content="Entrada libre, karaoke, cena, baile y cumpleaños en Lugano." />
   <meta property="og:image" content="foto-1.jpg" />
 
   <link rel="stylesheet" href="styles.css" />
@@ -17,9 +16,7 @@
 <body>
   <div class="noise"></div>
 
-  <a class="whatsapp" href="https://wa.me/5491164919419" target="_blank" aria-label="Reservar por WhatsApp">
-    <span>☏</span>
-  </a>
+  <a class="whatsapp" href="https://wa.me/5491164919419?text=Hola%20Diego%2C%20quiero%20consultar%20por%20una%20reserva%20en%20El%20Karaoke%20de%20Diego" target="_blank" aria-label="Reservar por WhatsApp">☏</a>
 
   <header class="hero" id="inicio">
     <video class="hero-video" autoplay muted loop playsinline poster="foto-1.jpg" src="hero-video.mp4"></video>
@@ -32,47 +29,99 @@
     <nav class="nav">
       <a class="logo" href="#inicio"><span>🎤</span> El Karaoke de Diego</a>
       <div class="nav-links">
-        <a href="#experiencia">Experiencia</a>
         <a href="#fechas">Fechas</a>
+        <a href="#cumples">Cumpleaños</a>
+        <a href="#videos">Videos</a>
         <a href="#galeria">Galería</a>
         <a href="#ubicacion">Ubicación</a>
       </div>
-      <a class="nav-cta" href="https://wa.me/5491164919419" target="_blank">Reservar</a>
+      <a class="nav-cta" href="https://wa.me/5491164919419?text=Hola%2C%20quiero%20reservar%20en%20El%20Karaoke%20de%20Diego" target="_blank">Reservar</a>
     </nav>
 
     <section class="hero-content">
       <p class="eyebrow">Montiel 5672 · Lugano · CABA</p>
-      <h1>Donde las canciones se convierten en recuerdos.</h1>
+      <h1>No importa cómo cantes. Importa con quién compartís la noche.</h1>
       <p class="lead">
-        Entrada libre, karaoke, cena, baile, brindis y festejos en un ambiente con luces,
-        música y mucha buena onda. También podés reservar tu mesa para cumpleaños.
+        Entrada libre, karaoke, cena, baile, brindis y cumpleaños.
+        También podés reservar tu mesa para festejar con tu grupo.
       </p>
 
       <div class="hero-pills">
+        <span>🚪 Entrada libre</span>
         <span>🎤 Karaoke</span>
         <span>🍽️ Cena</span>
-        <span>💃 Baile</span>
-        <span>🎉 Viernes por medio</span>
         <span>🎂 Reservá tu cumple</span>
-        <span>🚪 Entrada libre</span>
       </div>
 
       <div class="actions">
-        <a class="btn primary pulse" href="https://wa.me/5491164919419" target="_blank">Reservá tu mesa</a>
-        <a class="btn secondary" href="#fechas">Ver fechas disponibles</a>
+        <a class="btn primary pulse" href="https://wa.me/5491164919419?text=Hola%20Diego%2C%20quiero%20reservar%20una%20mesa%20para%20El%20Karaoke%20de%20Diego" target="_blank">Reservá tu mesa</a>
+        <a class="btn secondary" href="#fechas">Ver próximas fechas</a>
       </div>
     </section>
 
-    <a class="scroll-hint" href="#experiencia">Bajá para ver más ↓</a>
+    <a class="scroll-hint" href="#fechas">Próxima fecha ↓</a>
   </header>
 
   <main>
-    <section class="section intro" id="experiencia">
-      <p class="kicker">No hace falta saber cantar</p>
-      <h2>Solo hace falta tener ganas de pasarla bien.</h2>
+    <section class="section next-night" id="fechas">
+      <p class="kicker">Viernes por medio</p>
+      <h2>Próxima noche de karaoke</h2>
+
+      <div class="next-card">
+        <div>
+          <span class="next-label">Próxima fecha disponible</span>
+          <strong id="nextDateText">Calculando fecha...</strong>
+          <p>Reservá con anticipación para asegurar tu mesa.</p>
+        </div>
+
+        <div class="countdown" aria-label="Cuenta regresiva">
+          <div><strong id="days">--</strong><span>Días</span></div>
+          <div><strong id="hours">--</strong><span>Horas</span></div>
+          <div><strong id="minutes">--</strong><span>Min</span></div>
+          <div><strong id="seconds">--</strong><span>Seg</span></div>
+        </div>
+      </div>
+
+      <div class="calendar-head">
+        <h3>Fechas disponibles</h3>
+        <p>El calendario se arma solo cada viernes por medio.</p>
+      </div>
+
+      <div class="date-grid" id="calendarGrid"></div>
+    </section>
+
+    <section class="section open-night">
+      <div class="open-card">
+        <p class="kicker">Entrada libre + reservas</p>
+        <h2>Vení a disfrutar la noche o reservá tu mesa para festejar.</h2>
+        <p>
+          El lugar es libre: podés venir a cantar, cenar, bailar y pasarla bien.
+          Y si querés festejar tu cumpleaños, aniversario o juntada, podés reservar una mesa.
+        </p>
+
+        <div class="open-options">
+          <article>
+            <span>🚪</span>
+            <h3>Entrada libre</h3>
+            <p>Te sumás a la noche y disfrutás del karaoke, la cena y el baile.</p>
+          </article>
+          <article>
+            <span>🎂</span>
+            <h3>Reservá cumpleaños</h3>
+            <p>Mesa para tu grupo, karaoke toda la noche y ambiente de festejo.</p>
+          </article>
+        </div>
+
+        <a class="btn primary" href="https://wa.me/5491164919419?text=Hola%2C%20quiero%20consultar%20para%20reservar%20una%20mesa%20de%20cumplea%C3%B1os%20en%20El%20Karaoke%20de%20Diego" target="_blank">Consultar por cumpleaños</a>
+      </div>
+    </section>
+
+    <section class="section intro">
+      <p class="kicker">La noche más divertida de Lugano</p>
+      <h2>Cantá, cená, bailá y brindá en un solo lugar.</h2>
       <p>
-        En El Karaoke de Diego venís a vivir una noche completa: cantás,
-        cenás, bailás, brindás y compartís un momento distinto con tu gente.
+        Luces, bolas de espejo, gente cantando, mesas brindando y una pista
+        que transforma cualquier salida en una noche inolvidable.
       </p>
 
       <div class="stats">
@@ -83,83 +132,15 @@
       </div>
     </section>
 
+    <section class="section videos" id="videos">
+      <p class="kicker">Viví el ambiente</p>
+      <h2>Un vistazo a la noche</h2>
+      <p class="section-text">Videos cortitos para que se sienta la energía del lugar.</p>
 
-    <section class="section open-night">
-      <div class="open-card">
-        <p class="kicker">Entrada libre</p>
-        <h2>Vení a disfrutar la noche o reservá tu mesa para festejar.</h2>
-        <p>
-          El Karaoke de Diego es un lugar abierto para venir a cantar, cenar, bailar y pasarla bien.
-          Si querés festejar tu cumpleaños, aniversario o juntada, podés reservar una mesa y vivir
-          la noche con tu grupo.
-        </p>
-
-        <div class="open-options">
-          <article>
-            <span>🚪</span>
-            <h3>Entrada libre</h3>
-            <p>Venís, te sumás a la noche y disfrutás del karaoke, la cena y el baile.</p>
-          </article>
-          <article>
-            <span>🎂</span>
-            <h3>Reservá tu mesa</h3>
-            <p>Ideal para cumpleaños, grupos de amigos, familia o festejos especiales.</p>
-          </article>
-        </div>
-
-        <a class="btn primary" href="https://wa.me/5491164919419?text=Hola%2C%20quiero%20consultar%20para%20reservar%20una%20mesa%20de%20cumplea%C3%B1os%20en%20El%20Karaoke%20de%20Diego" target="_blank">
-          Consultar por cumpleaños
-        </a>
-      </div>
-    </section>
-
-    <section class="section calendar" id="fechas">
-      <p class="kicker">Próximas noches</p>
-      <h2>Fechas disponibles</h2>
-      <p class="calendar-subtitle">
-        Reservá tu mesa con anticipación. Las noches de karaoke se realizan viernes por medio.
-      </p>
-
-      <div class="month-block">
-        <h3>Julio 2026</h3>
-        <div class="date-grid">
-          <article class="date-card featured">
-            <span class="day">Viernes</span>
-            <strong>3</strong>
-            <span>Julio 2026</span>
-            <a href="https://wa.me/5491164919419?text=Hola%2C%20quiero%20reservar%20para%20el%20viernes%203%20de%20julio%20de%202026" target="_blank">Reservar</a>
-          </article>
-          <article class="date-card">
-            <span class="day">Viernes</span>
-            <strong>17</strong>
-            <span>Julio 2026</span>
-            <a href="https://wa.me/5491164919419?text=Hola%2C%20quiero%20reservar%20para%20el%20viernes%2017%20de%20julio%20de%202026" target="_blank">Reservar</a>
-          </article>
-          <article class="date-card">
-            <span class="day">Viernes</span>
-            <strong>31</strong>
-            <span>Julio 2026</span>
-            <a href="https://wa.me/5491164919419?text=Hola%2C%20quiero%20reservar%20para%20el%20viernes%2031%20de%20julio%20de%202026" target="_blank">Reservar</a>
-          </article>
-        </div>
-      </div>
-
-      <div class="month-block">
-        <h3>Agosto 2026</h3>
-        <div class="date-grid">
-          <article class="date-card">
-            <span class="day">Viernes</span>
-            <strong>14</strong>
-            <span>Agosto 2026</span>
-            <a href="https://wa.me/5491164919419?text=Hola%2C%20quiero%20reservar%20para%20el%20viernes%2014%20de%20agosto%20de%202026" target="_blank">Reservar</a>
-          </article>
-          <article class="date-card">
-            <span class="day">Viernes</span>
-            <strong>28</strong>
-            <span>Agosto 2026</span>
-            <a href="https://wa.me/5491164919419?text=Hola%2C%20quiero%20reservar%20para%20el%20viernes%2028%20de%20agosto%20de%202026" target="_blank">Reservar</a>
-          </article>
-        </div>
+      <div class="video-grid">
+        <video autoplay muted loop playsinline poster="foto-1.jpg" src="ambiente-1.mp4"></video>
+        <video autoplay muted loop playsinline poster="foto-3.jpg" src="ambiente-2.mp4"></video>
+        <video autoplay muted loop playsinline poster="foto-4.jpg" src="ambiente-3.mp4"></video>
       </div>
     </section>
 
@@ -186,35 +167,6 @@
       </article>
     </section>
 
-    <section class="section split">
-      <div class="split-text">
-        <p class="kicker">Una experiencia distinta</p>
-        <h2>Venís por el karaoke. Te quedás por el ambiente.</h2>
-        <p>
-          Luces, bolas de espejo, gente cantando, mesas brindando y una pista
-          que convierte cualquier salida en una noche inolvidable.
-        </p>
-        <a class="btn primary" href="https://wa.me/5491164919419" target="_blank">Consultar disponibilidad</a>
-      </div>
-      <div class="feature-photo">
-        <img src="foto-3.jpg" alt="Pista iluminada en El Karaoke de Diego">
-      </div>
-    </section>
-
-    <section class="section gallery" id="galeria">
-      <p class="kicker">Galería</p>
-      <h2>Así se vive una noche en El Karaoke de Diego</h2>
-
-      <div class="photo-grid">
-        <a href="foto-1.jpg"><img src="foto-1.jpg" alt="Noche en El Karaoke de Diego"></a>
-        <a href="foto-2.jpg"><img src="foto-2.jpg" alt="Karaoke con luces"></a>
-        <a href="foto-3.jpg"><img src="foto-3.jpg" alt="Pista y baile"></a>
-        <a href="foto-4.jpg"><img src="foto-4.jpg" alt="Gente cantando karaoke"></a>
-        <a href="foto-5.jpg"><img src="foto-5.jpg" alt="Mesa brindando"></a>
-        <a href="foto-6.jpg"><img src="foto-6.jpg" alt="Festejo en karaoke"></a>
-      </div>
-    </section>
-
     <section class="section birthday" id="cumples">
       <div class="birthday-card">
         <p class="kicker">Cumpleaños y eventos</p>
@@ -235,21 +187,40 @@
       </div>
     </section>
 
+    <section class="section gallery" id="galeria">
+      <p class="kicker">Galería</p>
+      <h2>Así se vive una noche en El Karaoke de Diego</h2>
+
+      <div class="photo-grid">
+        <a href="foto-1.jpg"><img src="foto-1.jpg" alt="Noche en El Karaoke de Diego"></a>
+        <a href="foto-2.jpg"><img src="foto-2.jpg" alt="Karaoke con luces"></a>
+        <a href="foto-3.jpg"><img src="foto-3.jpg" alt="Pista y baile"></a>
+        <a href="foto-4.jpg"><img src="foto-4.jpg" alt="Gente cantando karaoke"></a>
+        <a href="foto-5.jpg"><img src="foto-5.jpg" alt="Mesa brindando"></a>
+        <a href="foto-6.jpg"><img src="foto-6.jpg" alt="Festejo en karaoke"></a>
+      </div>
+    </section>
+
     <section class="section reviews">
-      <p class="kicker">Lo que se vive</p>
-      <h2>Una noche para animarse y disfrutar.</h2>
+      <p class="kicker">Opiniones</p>
+      <h2>Lo que se vive en la noche</h2>
+      <p class="section-text">Espacio para destacar comentarios de clientes. Podés reemplazarlos por reseñas reales cuando quieras.</p>
+
       <div class="review-grid">
         <article>
           <div>★★★★★</div>
           <p>“La pasamos increíble. Ambiente familiar, música y mucha diversión.”</p>
+          <span>— Cliente</span>
         </article>
         <article>
           <div>★★★★★</div>
           <p>“Ideal para ir con amigos, cantar, cenar y bailar toda la noche.”</p>
+          <span>— Cliente</span>
         </article>
         <article>
           <div>★★★★★</div>
-          <p>“Un lugar con muy buena onda para festejar cumpleaños.”</p>
+          <p>“Muy buena onda para festejar cumpleaños y pasar una noche distinta.”</p>
+          <span>— Cliente</span>
         </article>
       </div>
     </section>
@@ -268,7 +239,7 @@
       </div>
 
       <div class="actions center">
-        <a class="btn primary" href="https://wa.me/5491164919419" target="_blank">WhatsApp: 11 6491-9419</a>
+        <a class="btn primary" href="https://wa.me/5491164919419?text=Hola%2C%20quiero%20reservar%20en%20El%20Karaoke%20de%20Diego" target="_blank">WhatsApp: 11 6491-9419</a>
         <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Montiel%205672%20CABA" target="_blank">Abrir en Maps</a>
       </div>
     </section>
@@ -276,8 +247,10 @@
 
   <footer>
     <strong>🎤 El Karaoke de Diego</strong>
-    <p>Karaoke · Cena · Baile · Cumpleaños · Eventos</p>
+    <p>Entrada libre · Karaoke · Cena · Baile · Cumpleaños · Eventos</p>
     <p>Montiel 5672, Lugano, CABA · Reservas: 11 6491-9419</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
